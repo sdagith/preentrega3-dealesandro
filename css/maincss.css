@@ -7,10 +7,19 @@
   border: none;
   outline: none; }
 
+/*COLOR TARJETAS SECTION INFO - INDEX CON BS*/
+.bg-success {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
+}
+
+ 
 /*Definición de GRID*/
 .main-wrapper {
   display: grid;
-  grid-template-areas: "header" "main " "footer"; }
+  grid-template-areas: "header"
+ "main "
+ "footer"; }
 
 header {
   grid-area: header; }
@@ -19,7 +28,9 @@ main {
   grid-area: main;
   /*Grid dentro del main*/
   display: grid;
-  grid-template-areas: "intro" "info" "aside"; }
+  grid-template-areas: "intro"
+ "info"
+ "aside"; }
 
 .intro {
   grid-area: intro; }
@@ -188,12 +199,15 @@ form {
 @media screen and (min-width: 768px) {
   .main-wrapper {
     display: grid;
-    grid-template-areas: "header header" "main main" "footer footer"; }
+    grid-template-areas: "header header"
+ "main main"
+ "footer footer"; }
   main {
     grid-area: main;
     /*Grid dentro del main*/
     display: grid;
-    grid-template-areas: "intro intro" "info aside"; }
+    grid-template-areas: "intro intro"
+ "info aside"; }
   .intro {
     grid-area: intro;
     display: flex;
